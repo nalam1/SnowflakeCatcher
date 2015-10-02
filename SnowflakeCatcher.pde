@@ -6,7 +6,7 @@ void setup()
 {
   background(0); 
   size(800,800);
-  snow = new Snowflake[500];
+  snow = new Snowflake[200];
   for(int i = 0; i < totalSnowFlakes; i++) {
     snow[i] = new Snowflake(false);
   }
