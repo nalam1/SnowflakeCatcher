@@ -60,6 +60,7 @@ class Snowflake
   }
   void show()
   {
+  nostroke();
     fill(255);
     ellipse(x,y,7,7);
     //your code here
