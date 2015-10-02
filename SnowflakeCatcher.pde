@@ -9,6 +9,15 @@ void setup()
   snow = new Snowflake[100];
   for(int i = 0; i < totalSnowFlakes; i++) {
     snow[i] = new Snowflake(false);
+    ellipse(210,345,200,200);
+ellipse(210,221,200,200);
+ellipse(210,116,200,200);
+fill(255, 153, 0);
+ellipse(168,100,10,10);
+ellipse(247,92,10,10);
+fill(255, 255, 255);
+arc(228,84,200,172,69,138);
+
   }
   //your code here
 }
@@ -22,6 +31,7 @@ void draw()
     snow[i].wrap();
     snow[i].show();
     snow[i].checkMoving();
+    
   }
   if (totalMoving < 100) {
     totalSnowFlakes += 1;
