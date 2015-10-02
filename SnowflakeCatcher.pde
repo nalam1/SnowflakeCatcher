@@ -48,12 +48,12 @@ class Snowflake
   //class member variable declarations
   Snowflake(boolean inputstartTop)
   {
-    x = (int)(Math.random()*301);
+    x = (int)(Math.random()*800);
     if (inputstartTop == true) {
       y = 0;
     }
     else {
-      y = (int)(Math.random()*296);
+      y = (int)(Math.random()*796);
     }
     isMoving = true;
     //class member variable initializations
@@ -61,12 +61,12 @@ class Snowflake
   void show()
   {
     fill(255);
-    ellipse(x,y,10,10);
+    ellipse(x,y,7,7);
     //your code here
   }
   void lookDown()
   {
-    if (y > 0 && y < 300) {
+    if (y > 0 && y < 800) {
       if(get(x,y+10) != color(0)) {
         isMoving = false;
       }
