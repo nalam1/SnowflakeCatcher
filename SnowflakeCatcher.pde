@@ -4,7 +4,7 @@ int totalMoving;
 int totalSnowFlakes = 100;
 void setup()
 {
-  background(255); 
+  background(0); 
   size(800,800);
   snow = new Snowflake[100];
   for(int i = 0; i < totalSnowFlakes; i++) {
@@ -68,7 +68,7 @@ class Snowflake
   void lookDown()
   {
     if (y > 0 && y < 800) {
-      if(get(x,y+4) != color(255)) {
+      if(get(x,y+3) != color(0)) {
         isMoving = false;
       }
       else {
