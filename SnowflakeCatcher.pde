@@ -31,7 +31,7 @@ void draw()
 }
 void mouseDragged()
 {
-  stroke(0,155);
+  stroke(255,153,0);
   strokeWeight(3);
   line(pmouseX,pmouseY,mouseX,mouseY);
   strokeWeight(1);
