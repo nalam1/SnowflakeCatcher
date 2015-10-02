@@ -9,7 +9,7 @@ void setup()
   snow = new Snowflake[100];
   for(int i = 0; i < totalSnowFlakes; i++) {
     snow[i] = new Snowflake(false);
-    nostroke();
+stroke(255);
 ellipse(210,345,200,200);
 ellipse(210,221,200,200);
 ellipse(210,116,200,200);
