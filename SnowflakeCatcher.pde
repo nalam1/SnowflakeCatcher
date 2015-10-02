@@ -4,7 +4,7 @@ int totalMoving;
 int totalSnowFlakes = 500;
 void setup()
 {
-  background(0); 
+  background(255); 
   size(800,800);
   snow = new Snowflake[200];
   for(int i = 0; i < totalSnowFlakes; i++) {
@@ -31,7 +31,7 @@ void draw()
 }
 void mouseDragged()
 {
-  stroke(0,155,155);
+  stroke(0,155);
   strokeWeight(3);
   line(pmouseX,pmouseY,mouseX,mouseY);
   strokeWeight(1);
@@ -68,7 +68,7 @@ class Snowflake
   void lookDown()
   {
     if (y > 0 && y < 800) {
-      if(get(x,y+4.5) != color(0)) {
+      if(get(x,y+4) != color(0)) {
         isMoving = false;
       }
       else {
