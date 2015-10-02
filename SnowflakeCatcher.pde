@@ -1,12 +1,12 @@
 
 Snowflake [] snow;
 int totalMoving;
-int totalSnowFlakes = 50000;
+int totalSnowFlakes = 500;
 void setup()
 {
   background(0); 
   size(800,800);
-  snow = new Snowflake[50000];
+  snow = new Snowflake[500];
   for(int i = 0; i < totalSnowFlakes; i++) {
     snow[i] = new Snowflake(false);
   }
@@ -23,7 +23,7 @@ void draw()
     snow[i].show();
     snow[i].checkMoving();
   }
-  if (totalMoving < 50000) {
+  if (totalMoving < 500) {
     totalSnowFlakes += 1;
     snow[totalSnowFlakes-1] = new Snowflake(true);
   }
