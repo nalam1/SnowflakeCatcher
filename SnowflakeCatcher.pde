@@ -93,7 +93,7 @@ class Snowflake
   {
     if(y == 296) { 
       y = 0;
-      x = (int)(Math.random()*301);
+      x = (int)(Math.random()*800);
     }
     //your code here
   }
