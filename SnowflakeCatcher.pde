@@ -62,7 +62,7 @@ class Snowflake
   {
   nostroke();
     fill(255);
-    ellipse(x,y,6,6);
+    ellipse(x,y,7,7);
     //your code here
   }
   void lookDown()
