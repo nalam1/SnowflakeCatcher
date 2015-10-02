@@ -32,7 +32,7 @@ void draw()
 void mouseDragged()
 {
   stroke(0,155,155);
-  strokeWeight(5);
+  strokeWeight(3);
   line(pmouseX,pmouseY,mouseX,mouseY);
   strokeWeight(1);
   stroke(0);
@@ -53,7 +53,7 @@ class Snowflake
       y = 0;
     }
     else {
-      y = (int)(Math.random()*796);
+      y = (int)(Math.random()*800);
     }
     isMoving = true;
     //class member variable initializations
@@ -62,7 +62,7 @@ class Snowflake
   {
   nostroke();
     fill(255);
-    ellipse(x,y,7,7);
+    ellipse(x,y,6,6);
     //your code here
   }
   void lookDown()
